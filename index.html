@@ -1,156 +1,51 @@
 <!DOCTYPE html>
-<html lang="ku">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mabast Design</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mabast Design Studio</title>
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-header{
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#111827;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#38bdf8;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:80vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:20px;
-max-width:700px;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 30px;
-background:#38bdf8;
-color:white;
-text-decoration:none;
-border-radius:8px;
-}
-
-section{
-padding:80px 10%;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#111827;
-}
+body{margin:0;background:#070b14;color:#fff;font-family:Arial,sans-serif}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;
+background:linear-gradient(135deg,#05070d,#111827);padding:40px}
+.wrap{max-width:1200px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.logo{font-size:70px;font-weight:bold;color:#d4af37}
+h1{font-size:58px;margin:10px 0}
+.gold{color:#d4af37}
+.card{border:1px solid rgba(212,175,55,.3);padding:18px;border-radius:16px;background:rgba(255,255,255,.03);margin:12px 0}
+.btn{display:inline-block;padding:14px 28px;background:#d4af37;color:#000;text-decoration:none;border-radius:30px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.work{border:1px solid rgba(212,175,55,.3);border-radius:14px;padding:30px;text-align:center}
+@media(max-width:800px){.wrap{grid-template-columns:1fr}h1{font-size:40px}}
 </style>
-
 </head>
 <body>
-
-<header>
-<div class="logo">Mabast Design</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Portfolio</a>
-<a href="#">Contact</a>
-</nav>
-</header>
-
 <section class="hero">
-<h1>Professional Graphic Designer</h1>
-<p>
-Logo Design, Social Media Posts, Branding and Creative Designs
-</p>
-
-<a href="#" class="btn">Contact Me</a>
-</section>
-
-<section>
-<h2>My Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Logo Design</h3>
-<p>Modern and professional logos.</p>
+<div class="wrap">
+<div>
+<div class="logo">MD</div>
+<h1>MABAST <span class="gold">DESIGN</span></h1>
+<p>We Design Brands That Stand Out.</p>
+<div class="card">✓ Custom Logo Design</div>
+<div class="card">✓ Brand Identity</div>
+<div class="card">✓ Social Media Design</div>
+<div class="card">✓ Poster & Banner Design</div>
+<br>
+<a class="btn" href="#">DM FOR ORDERS</a>
 </div>
 
-<div class="card">
-<h3>Social Media Design</h3>
-<p>Instagram and Facebook posts.</p>
+<div>
+<h2 class="gold">Recent Work</h2>
+<div class="grid">
+<div class="work">AREN</div>
+<div class="work">NATURA</div>
+<div class="work">ALPHA</div>
+<div class="work">FOCUS</div>
+<div class="work">TECHNO</div>
+<div class="work">JOURNEY</div>
 </div>
-
-<div class="card">
-<h3>Brand Identity</h3>
-<p>Complete visual branding.</p>
 </div>
-
 </div>
 </section>
-
-<section>
-<h2>Portfolio</h2>
-<p>Place your best design projects here.</p>
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>Email: your@email.com</p>
-</section>
-
-<footer>
-© 2026 Mabast Design
-</footer>
-
 </body>
 </html>
